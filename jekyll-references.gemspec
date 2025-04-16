@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.author = 'Igor Padoim'
   spec.email = 'igorpadoim@gmail.com'
 
-  spec.version = '1.0.0'
+  spec.version = '1.0.1'
   spec.license = 'WTFPL'
   spec.summary = 'Create Liquid tags to parse and show reference lists'
   spec.description = spec.summary

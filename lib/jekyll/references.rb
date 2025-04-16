@@ -4,9 +4,6 @@ require 'open-uri'
 
 module Jekyll
   class ReferencesTag < Liquid::Tag
-    safe true
-    priority :normal
-
     def initialize(tag_name, text, tokens)
       super
       @title = text
