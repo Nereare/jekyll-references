@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   spec.author = 'Igor Padoim'
   spec.email = 'igorpadoim@gmail.com'
 
-  spec.version = '1.1.0'
+  spec.version = '1.1.0-r1'
   spec.license = 'WTFPL'
   spec.summary = 'Create Liquid tags to parse and show reference lists'
   spec.description = spec.summary
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.metadata['changelog_uri'] = 'https://github.com/Nereare/jekyll-references/blob/master/CHANGELOG.md'
 
   spec.require_paths = ['lib']
-  spec.files = ['lib/jekyll-references.rb', 'lib/jekyll-cite.rb']
+  spec.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r!^(test|spec|features|pkg)/!) }
 
   spec.add_dependency 'jekyll', '~> 4.4'
 end
