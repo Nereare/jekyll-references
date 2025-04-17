@@ -301,7 +301,7 @@ module Jekyll
       output = "<h2>#{@title}</h2>\n"
       output += "<ol>\n"
       refs.each do |r|
-        output += "<li>#{parse_ref(r[1], ref_style, ref_lang)}</li>\n"
+        output += "<li id=\"ref-#{r[0]}\">#{parse_ref(r[1], ref_style, ref_lang)}</li>\n"
       end
       output += "</ol>"
       # Return output
